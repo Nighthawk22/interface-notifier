@@ -1,0 +1,18 @@
+---
+interfaces:
+- wlp3s0
+- wlan1
+- enp4s0f1
+receivers:
+- slack:
+    url: https://slack.com/api-url
+    channel: "@test"
+    user: username
+    icon: icon
+- email:
+    To: example@email.com
+    From: slacknotifier@email.com
+    Host: mail.example.com:25
+    auth_username: example@email.com
+    auth_password: superhot
+    require_tls: true
